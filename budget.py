@@ -5,7 +5,7 @@ Today = datetime.today()
 
 LastDay = date(2016,5,14)
 
-SpringBreakWeekendDays = [date(2016,3,12), date(2016,3,13), date(2016,3,19)]
+Holidays = [date(2016,3,12), date(2016,3,13), date(2016,3,19)]
 
 TodayDate = date(Today.year,Today.month,Today.day)
 #TodayDate = date(2016,3,9)
@@ -13,8 +13,8 @@ TodayAdd = TodayDate
 
 diff = (LastDay - TodayDate).days
 
-WeekendDays = -3
-for day in SpringBreakWeekendDays:
+WeekendDays = -int(len(Holidays))
+for day in Holidays:
 	if day <= TodayDate:
 		WeekendDays += 1
 
