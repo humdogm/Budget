@@ -15,7 +15,7 @@ diff = (LastDay - TodayDate).days
 
 WeekendDays = -int(len(Holidays))
 for day in Holidays:
-	if day <= TodayDate:
+	if day < TodayDate:
 		WeekendDays += 1
 
 if TodayDate.weekday() < 5:
