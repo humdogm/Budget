@@ -26,5 +26,5 @@ else:
 		if TodayAdd.weekday() == 5 or TodayAdd.weekday() == 6:
 			WeekendDays += 1
 		TodayAdd += timedelta(days = 1)
-	print("You can spend $"  + str((moneyleft/WeekendDays)/1.0825)[0:7] + " excluding tax.")
-	print("You can spend $"  + str(moneyleft/WeekendDays)[0:7] + " including tax.")
+	print("You can spend $"  + str((moneyleft/WeekendDays)/1.0825)[0:8] + " excluding tax.")
+	print("You can spend $"  + str(moneyleft/WeekendDays)[0:8] + " including tax.")
