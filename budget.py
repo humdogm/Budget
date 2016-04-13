@@ -1,4 +1,9 @@
 from datetime import *
+import webbrowser
+
+url = "http://mavs.uta.edu"
+webbrowser.open_new_tab(url)
+
 moneyleft = float(input(" How much money do you have left? \n $"))
 
 Today = datetime.today()
