@@ -1,8 +1,8 @@
 from datetime import *
-import webbrowser
+import os
 
 url = "http://mavs.uta.edu"
-webbrowser.open_new_tab(url)
+os.startfile(url)
 
 moneyleft = float(input(" How much money do you have left? \n $"))
 
