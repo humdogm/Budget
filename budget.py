@@ -1,7 +1,7 @@
 from datetime import *
 import os
 
-url = "http://mavmoney.uta.edu"
+url = "http://mavmoney.uta.edu
 os.startfile(url)
 
 moneyleft = float(input(" How much money do you have left? \n $"))
