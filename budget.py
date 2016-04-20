@@ -22,9 +22,6 @@ WeekendDays = -int(len(Holidays))
 for day in Holidays:
 	if day < TodayDate:
 		WeekendDays += 1
-
-if TodayDate.weekday() < 5:
-	print("Today isn't a weekend!")
 	
 else:
 	for i in range(0, diff-1):
