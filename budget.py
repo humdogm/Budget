@@ -23,14 +23,15 @@ for day in Holidays:
 	if day < TodayDate:
 		WeekendDays += 1
 	
+
+for i in range(0, diff-1):
+	if TodayAdd.weekday() == 5 or TodayAdd.weekday() == 6:
+		WeekendDays += 1
+	TodayAdd += timedelta(days = 1)
+	
+if TodayDate.weekday() < 5:
+	print("You can spend $"  + str((moneyleft/WeekendDays)/1.0825)[0:8] + " excluding tax on Saturday.")
+	print("You can spend $"  + str(moneyleft/WeekendDays)[0:8] + " including tax on Saturday.")
 else:
-	for i in range(0, diff-1):
-		if TodayAdd.weekday() == 5 or TodayAdd.weekday() == 6:
-			WeekendDays += 1
-		TodayAdd += timedelta(days = 1)
-	if TodayDate.weekday() < 5:
-		print("You can spend $"  + str((moneyleft/WeekendDays)/1.0825)[0:8] + " excluding tax on Saturday.")
-		print("You can spend $"  + str(moneyleft/WeekendDays)[0:8] + " including tax on Saturday.")
-	else:
-		print("You can spend $"  + str((moneyleft/WeekendDays)/1.0825)[0:8] + " excluding tax today.")
-		print("You can spend $"  + str(moneyleft/WeekendDays)[0:8] + " including tax today")
+	print("You can spend $"  + str((moneyleft/WeekendDays)/1.0825)[0:8] + " excluding tax today.")
+	print("You can spend $"  + str(moneyleft/WeekendDays)[0:8] + " including tax today")
