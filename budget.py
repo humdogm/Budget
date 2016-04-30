@@ -22,7 +22,6 @@ WeekendDays = -int(len(Holidays))
 for day in Holidays:
 	if day < TodayDate:
 		WeekendDays += 1
-	
 
 for i in range(0, diff-1):
 	if TodayAdd.weekday() == 5 or TodayAdd.weekday() == 6:
