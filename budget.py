@@ -1,5 +1,5 @@
 from datetime import *
-import os
+import oso
 
 url = "http://mavmoney.uta.edu"
 os.startfile(url)
